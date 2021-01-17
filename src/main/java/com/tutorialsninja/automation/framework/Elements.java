@@ -85,64 +85,64 @@ public class Elements {
 			element.click();
 	}
 	
-	public boolean isEnabled(WebElement element){
+	public static boolean isEnabled(WebElement element){
 		if(element.isEnabled())
 			return true;
 		return false;
 	}
 	
-	public boolean isDisplayed(WebElement element){
+	public static boolean isDisplayed(WebElement element){
 		if(element.isDisplayed())
 			return true;
 		return false;
 	}
 	
-	public void selectByText(WebElement element,String text){
+	public static void selectByText(WebElement element,String text){
 		Select select=new Select(element);
 		select.selectByVisibleText(text);
 	}
 	
-	public void selectByIndex(WebElement element,int index){
+	public static void selectByIndex(WebElement element,int index){
 		Select select=new Select(element);
 		select.selectByIndex(index);
 	}
 	
-	public void selectByValue(WebElement element,String value){
+	public static void selectByValue(WebElement element,String value){
 		Select select=new Select(element);
 		select.selectByValue(value);
 	}
 	
-	public String getFirstSelectedOption(WebElement element){
+	public static String getFirstSelectedOption(WebElement element){
 		Select select=new Select(element);
 		return select.getFirstSelectedOption().getText();
 	}
 	
-	public List<WebElement> getAllSelectedOptions(WebElement element){
+	public static List<WebElement> getAllSelectedOptions(WebElement element){
 		Select select=new Select(element);
 		return select.getAllSelectedOptions();
 		}
 	
-	public List<WebElement> getAllOptions(WebElement element){
+	public static List<WebElement> getAllOptions(WebElement element){
 		Select select=new Select(element);
 		return select.getOptions();
 	}
 	
-	public void deSelectByText(WebElement element,String text){
+	public static void deSelectByText(WebElement element,String text){
 		Select select=new Select(element);
 		select.deselectByVisibleText(text);
 	}
 	
-	public void deSelectByIndex(WebElement element,int index){
+	public static void deSelectByIndex(WebElement element,int index){
 		Select select=new Select(element);
 		select.deselectByIndex(index);
 	}
 	
-	public void deSelectByValue(WebElement element,String value){
+	public static void deSelectByValue(WebElement element,String value){
 		Select select=new Select(element);
 		select.deselectByValue(value);
 	}
 	
-	public void click(WebElement element){
+	public static void click(WebElement element){
 		Waits.waitUntil(() ->isDisplayed(element));
 		element.click();
 	}

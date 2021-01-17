@@ -1,0 +1,150 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-01-14T13:32:27.698Z",
+        "before": [
+          {
+            "result": {
+              "duration": 10920330000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp(Scenario)"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "Verify whether the user is able to register into the application by providing all the fields",
+        "description": "",
+        "id": "registration-functionality-scenarios;verify-whether-the-user-is-able-to-register-into-the-application-by-providing-all-the-fields",
+        "after": [
+          {
+            "result": {
+              "duration": 821279100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.closeBrowser(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2382443800,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I launch the application",
+            "match": {
+              "location": "StepDefinitions.i_launch_the_application()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2584300,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I navigate to Account Registration page",
+            "match": {
+              "location": "StepDefinitions.i_navigate_to_Account_Registration_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 16734200,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I provide all the below valid details",
+            "match": {
+              "location": "StepDefinitions.i_provide_all_the_below_valid_details(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "FirstName",
+                  "Alexander"
+                ]
+              },
+              {
+                "cells": [
+                  "LastName",
+                  "Gregor"
+                ]
+              },
+              {
+                "cells": [
+                  "Email",
+                  "alex.gregor.steelheart@gmail.com"
+                ]
+              },
+              {
+                "cells": [
+                  "Telephone",
+                  "0918381980"
+                ]
+              },
+              {
+                "cells": [
+                  "Password",
+                  "taskerJEKRAL6PS"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1591000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I select the Privacy Policy",
+            "match": {
+              "location": "StepDefinitions.i_select_the_Privacy_Policy()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1416600,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I click on Continue button",
+            "match": {
+              "location": "StepDefinitions.i_click_on_Continue_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1722600,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I should see that the User Account has successfully created",
+            "match": {
+              "location": "StepDefinitions.i_should_see_that_the_User_Account_has_successfully_created()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Registration functionality scenarios",
+    "description": "",
+    "id": "registration-functionality-scenarios",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/Login.feature",
+    "tags": []
+  }
+]

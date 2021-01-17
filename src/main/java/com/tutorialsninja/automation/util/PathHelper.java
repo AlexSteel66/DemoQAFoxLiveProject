@@ -1,5 +1,7 @@
 package com.tutorialsninja.automation.util;
 
+import com.tutorialsninja.automation.config.PropertyFileReader;
+
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 
@@ -21,5 +23,7 @@ public class PathHelper {
 	public static void main(String[] args) throws FileNotFoundException{
 		System.out.println(getInputStreamResourcePath("/src/main/resources/ConfigurationFile/config.properties"));
 	}
+
+
 
 }
